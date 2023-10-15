@@ -21,3 +21,9 @@ class FileManager:
                 file.write(data)
         except Exception as e:
             print(f'Dogodila se pogreska {e}')
+
+    @staticmethod
+    def read_lines(path):
+        with open(path, 'r') as file:
+            lines = file.readlines()
+            return lines
